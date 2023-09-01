@@ -1,0 +1,49 @@
+"use client";
+import { useEffect, useState } from "react";
+import { animated, useSpring } from "react-spring";
+
+const LineComponent = (toggle: boolean) => {
+  const [length, setLength] = useState<any>(null);
+  const animatedStyle = useSpring({
+    strokeDasharray: length,
+    strokeDashoffset: toggle ? 0 : length,
+    delay: 100,
+    config: { duration: 10000 },
+  });
+  return (
+    <animated.path
+      style={animatedStyle}
+      ref={(ref) => {
+        if (ref) {
+          setLength(ref.getTotalLength());
+        }
+      }}
+      d="M890.5 0.000196591C991 -1.50032 1192.86 18.7675 1069.66 174.503C915.648 369.171 1461.28 521.367 1373.27 369.172C1285.27 216.976 616.432 390.408 1157.66 648.787C1590.64 855.489 739.638 909.525 260.013 910.705C92.1495 918.375 -165.491 995.314 146.856 1241.71C537.29 1549.7 1243.71 1680.69 1200.68 1868.32C1157.66 2055.94 -386.357 2872 146.856 2872C1320 2872 251.144 3343.89 712 3504C852.545 3552.83 1446.95 3470.17 1416 3780C1358.34 4357.28 -60.8 4083.2 96 4400C292 4796 1416 4944 1446 5080"
+      stroke="#2BB32A"
+      stroke-width="1.5"
+      stroke-linecap="square"
+    />
+  );
+};
+const AnimatedLine = () => {
+  const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    setToggle(true);
+  }, []);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1440"
+      height="5081"
+      viewBox="0 0 1440 5081"
+      fill="none"
+    >
+      {LineComponent(toggle)}
+    </svg>
+  );
+};
+const LineSvgAnimate = () => {
+  return <div className="absolute top-0 ">{AnimatedLine()}</div>;
+};
+export default LineSvgAnimate;

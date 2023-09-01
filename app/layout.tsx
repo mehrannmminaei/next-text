@@ -1,9 +1,11 @@
-import "./globals.css";
+import "./globals.scss";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { ClientLayout } from "./ClientLayout";
+import NavBar from "./components/NavBar/NavBar";
+import { M_PLUS_1 } from "next/font/google";
+import LineSvgAnimate from "./components/LineSvgAnimate/LineSvgAnimate";
 
-const inter = Inter({ subsets: ["latin"] });
+const mplus = M_PLUS_1({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Test Page Mehran",
@@ -17,8 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ClientLayout>{children}</ClientLayout>
+      <body
+        className={`flex flex-col items-center ${mplus.className} justify-center `}
+      >
+        <LineSvgAnimate />
+        <div className={"container"}>
+          <NavBar />
+          <ClientLayout>{children}</ClientLayout>
+        </div>
       </body>
     </html>
   );

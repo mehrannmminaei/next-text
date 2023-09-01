@@ -1,0 +1,23 @@
+.containerSliderBanner {
+  position: relative;
+  min-height: 540px;
+}
+
+.circleCustomStyle {
+  position: absolute;
+  bottom: 0px;
+  right: -150px;
+}
+
+.svg {
+  margin: 0 auto;
+  display: block;
+  // backdrop-filter: blur(3.5px);
+  transform: rotate(20deg);
+  // transform: rotate(11deg) skewY(-11deg) skewX(-10deg); right 3 card
+
+  // -webkit-transform: perspective(300px) rotateX(30deg) skewY(20deg);
+  // transform: perspective(300px) rotateX(30deg) skewY(20deg);
+
+  //transform: rotate(-11deg) skewY(20deg); green left
+}

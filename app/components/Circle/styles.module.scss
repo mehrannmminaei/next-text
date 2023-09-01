@@ -1,0 +1,7 @@
+@import "../../stylings/variable.module.scss";
+.container {
+  border-radius: 50%;
+  width: 492px;
+  height: 492px;
+  background-color: $color-primary;
+}

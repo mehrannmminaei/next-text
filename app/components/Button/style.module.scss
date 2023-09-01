@@ -1,0 +1,59 @@
+.button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  margin: 5px;
+  padding: 8px 22px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #2bb32a;
+  border-radius: 3px;
+}
+.disabled {
+  background-color: lightgray !important;
+  cursor: not-allowed !important;
+}
+
+.actionBtn {
+  transition: 0.3s;
+  position: relative;
+  display: block;
+}
+
+.actionBtn::after {
+  content: "";
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  left: calc(50% - 0.75em);
+  top: calc(50% - 0.75em);
+  border: 0.15em solid transparent;
+  border-right-color: red;
+  border-radius: 50%;
+  animation: buttonAnim 0.7s linear infinite;
+  opacity: 0;
+}
+
+@keyframes buttonAnim {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.actionBtn.loading {
+  background-color: lightgray !important;
+}
+
+.actionBtn.loading::after {
+  opacity: 1;
+}

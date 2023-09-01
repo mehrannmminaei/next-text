@@ -1,0 +1,10 @@
+$color-primary: #2bb32a;
+$color-secondary: cyan;
+$body-background-color: #1a1c1e;
+
+// Export for JS
+:export {
+  colorPrimary: $color-primary;
+  colorSecondary: $color-secondary;
+  bodyBackgroundColor: $body-background-color;
+}

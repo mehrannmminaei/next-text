@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./stylings/variable.module.scss";
+
+body {
+  background: $body-background-color;
+}
+
+.container {
+  min-width: 1440px;
+  padding-top: 32px;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: hidden;
+  background: radial-gradient(
+    farthest-corner at top,
+    rgb(43, 179, 42, 0.3),
+    transparent 900px
+  );
+}
+
+// radial-gradient(50deg, #add8c2, #1a1e1c);
+// background-image: radial-gradient(closest-side at 60% 55%, blue, green, yellow, black);
+/*linear-gradient(
+      to right,
+      rgba(30, 75, 115, 1),
+      rgba(255, 255, 255, 0)
+    ),
+    radial-gradient(
+      farthest-corner at bottom right,
+      rgba(255, 50, 50, 0.5),
+      transparent 400px
+    ),
+    linear-gradient(0deg, #3e0479, #1a1e1c);
+    background: radial-gradient(
+      farthest-side at top right,
+      #3d544d,
+      transparent 500px
+    ),
+    radial-gradient(
+      farthest-corner at bottom right,
+      rgba(255, 50, 50, 0.5),
+      transparent 400px
+    ),
+    radial-gradient(
+      farthest-corner at right,
+      rgba(4, 236, 20, 0.5),
+      transparent 400px
+    ),
+    radial-gradient(
+      farthest-corner at left,
+      rgba(240, 164, 222, 0.5),
+      transparent 400px
+    );*/
