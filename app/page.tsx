@@ -3,7 +3,12 @@ import BannerRightSide from "./components/Banner/BanerRightSide";
 import Banner from "./components/Banner/Banner";
 import BannerLeftSide from "./components/Banner/BannerLeftSide";
 import Circle from "./components/Circle/Circle";
+import Features from "./components/Features/Features";
 import LandingAboutPanel from "./components/LandingAboutPanel/LandingAboutPanel";
+import LogoSlider from "./components/LogoSlider/LogoSlider";
+import PersonalSection from "./components/PersonalSection/PersonalSection";
+import PersonalSectionLeft from "./components/PersonalSection/PersonalSectionLeft";
+import PersonalSectionRight from "./components/PersonalSection/PersonalSectionRight";
 import Slider from "./components/Slider/Slider";
 import Space, { spaceType } from "./components/Space/Space";
 import styles from "./landing.module.scss";
@@ -21,11 +26,18 @@ export default function Home() {
         />
       </Slider>
       <Space variant={spaceType.SPACE_1} />
-      <Slider customStyle={styles.containerSliderBanner}>
-        <LandingAboutPanel />
-      </Slider>
-
+      <LandingAboutPanel />
       <Space variant={spaceType.SPACE_1} />
+      <LogoSlider />
+      <Space variant={spaceType.SPACE_1} />
+      <Features />
+      <Space variant={spaceType.SPACE_1} />
+      <Slider customStyle={styles.containerSliderBanner}>
+        <PersonalSection
+          leftSlide={<PersonalSectionLeft />}
+          rightSlide={<PersonalSectionRight />}
+        />
+      </Slider>
     </main>
   );
 }

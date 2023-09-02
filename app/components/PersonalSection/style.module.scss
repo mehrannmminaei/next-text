@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+  flex: 2;
+}
+
+.leftContainer {
+  display: flex;
+  flex: 1;
+}
+.rightContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: -2.5%;
+  line-height: 64px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  color: #adb2b1;
+  line-height: 24px;
+  text-overflow: ellipsis;
+}
+
+.subtitleContainer {
+  width: 70%;
+}
+
+.btnConnect {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnContainer {
+  background-color: #2bb32a;
+  border-radius: 64px;
+  border: 2px solid #2bb32a;
+  width: 235px;
+}
+
+.cardContainer1 {
+  position: absolute;
+  top: -100px;
+  right: 30px;
+  z-index: 10;
+}
+
+.cardContainer2 {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  z-index: 5;
+}
+.cardContainer3 {
+  position: absolute;
+  top: 210px;
+  right: 30px;
+  z-index: 0;
+}
+
+.warper {
+  margin: 0;
+  padding: 0;
+  backdrop-filter: blur(10px);
+
+  transform: rotate(11deg) skewY(-11deg) skewX(-10deg);
+  border-radius: 40px;
+}
