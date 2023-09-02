@@ -4,10 +4,14 @@ import Space, { spaceType } from "../Space/Space";
 import styles from "./style.module.scss";
 import UsersAvatarList from "../UsersAvatarList/UsersAvatarList";
 import UserCount from "./UserCount";
+import WaveLine from "../WaveLine/WaveLine";
 
 const BannerLeftSide = () => {
   return (
-    <div className="  h-full overflow-hidden">
+    <div className="h-full overflow-hidden">
+      <div className=" absolute top-16 -z-10">
+        <WaveLine />
+      </div>
       <span className={styles.title}>
         Discover the Perfect Credit Card for You
       </span>

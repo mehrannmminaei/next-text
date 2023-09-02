@@ -23,10 +23,8 @@ export default function RootLayout({
         className={`flex flex-col items-center ${mplus.className} justify-center `}
       >
         <LineSvgAnimate />
-        <div className={"container"}>
-          <NavBar />
-          <ClientLayout>{children}</ClientLayout>
-        </div>
+
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

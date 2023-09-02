@@ -11,6 +11,7 @@ import {
 } from "@/app/const/navbar";
 import ConnectToWallet from "../ConnectToWallet/ConnectToWallet";
 import Logo from "../Logo/Logo";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 const NavBar = () => (
   <div className={styles.container}>
     <div className={styles.leftRightContainer}>
