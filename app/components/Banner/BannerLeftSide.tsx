@@ -25,7 +25,7 @@ const BannerLeftSide = () => {
       <Space variant={spaceType.SPACE_2} />
       <Button className={styles.btnContainer} buttonClass={styles.btnConnect}>
         <div className="flex flex-row hover:scale-105">
-          <span className="mr-4 ">Get Started</span>
+          <span className="mr-4 whitespace-nowrap ">Get Started</span>
 
           <Image
             src={"./assets/svg/arrowRight.svg"}
