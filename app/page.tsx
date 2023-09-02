@@ -32,7 +32,7 @@ export default function Home() {
       <Space variant={spaceType.SPACE_1} />
       <Features />
       <Space variant={spaceType.SPACE_1} />
-      <Slider customStyle={styles.containerSliderBanner}>
+      <Slider customStyle={styles.containerSliderPersonalSection}>
         <PersonalSection
           leftSlide={<PersonalSectionLeft />}
           rightSlide={<PersonalSectionRight />}

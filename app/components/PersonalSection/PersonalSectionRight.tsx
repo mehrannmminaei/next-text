@@ -7,8 +7,8 @@ const PersonalSectionRight = () => {
       <div className={styles.cardContainer1}>
         <div className={styles.warper}>
           <SignalIcon
-            height={348}
-            width={551}
+            height={274}
+            width={435}
             textColor="#FFF"
             backgroundColor="#fff"
           />
@@ -17,8 +17,8 @@ const PersonalSectionRight = () => {
       <div className={styles.cardContainer2}>
         <div className={styles.warper}>
           <SignalIcon
-            height={348}
-            width={551}
+            height={274}
+            width={435}
             textColor="#000"
             backgroundColor="#2BB32A"
             fillOpacity="1"
@@ -28,8 +28,8 @@ const PersonalSectionRight = () => {
       <div className={styles.cardContainer3}>
         <div className={styles.warper}>
           <SignalIcon
-            height={348}
-            width={551}
+            height={274}
+            width={435}
             textColor="#000"
             backgroundColor="#fff"
             fillOpacity="1"

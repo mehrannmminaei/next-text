@@ -5,7 +5,7 @@ import styles from "./style.module.scss";
 
 const PersonalSectionLeft = () => {
   return (
-    <div className="h-full overflow-hidden">
+    <div className="h-full overflow-hidden flex flex-col justify-center">
       <span className={styles.title}>
         Design your personalized credit card.
       </span>
