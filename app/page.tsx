@@ -38,6 +38,7 @@ export default function Home() {
           rightSlide={<PersonalSectionRight />}
         />
       </Slider>
+      <Space variant={spaceType.SPACE_1} />
     </main>
   );
 }
